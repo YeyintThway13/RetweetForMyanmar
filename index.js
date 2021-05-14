@@ -8,19 +8,19 @@ var yyyy = today.getFullYear();
 
 today = yyyy + "-" + mm + "-" + dd;
 
-const T = new Twit(config);
+const Tweet = new Twit(config);
 
 const params = {
   q: `#WhatsHappeningInMyanmar since:${today}`,
   count: 100,
 };
 
-T.get("search/tweets", params, function (err, data, response) {
+Tweet.get("search/tweets", params, function (err, data, response) {
   const tweets = data.statuses;
   if (!err) {
     for (let tweet of tweets) {
       let retweetID = tweet.id_str;
-      T.post(
+      Tweet.post(
         "statuses/retweet/:id",
         { id: retweetID },
         function (err, data, response) {
