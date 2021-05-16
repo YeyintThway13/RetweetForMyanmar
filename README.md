@@ -5,6 +5,12 @@ This is twitter automation project using twit npm library.
 
 When we run this project , this will automatically retweet at most 100 tweets including #WhatsHappeningInMyanmar during this day.
 
+#### Before Running Codes
+
+#### Running Codes
+
+#### After running codes
+
 ## How to use it
 - Clone this project
 - create twitter developer account
