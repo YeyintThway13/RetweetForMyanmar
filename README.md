@@ -14,4 +14,4 @@ When we run this project , this will automatically retweet at most 100 tweets in
 - npm run dev 
 
 ## Technologies used in this project
-- 'Node.js'
+- `Node.js`
